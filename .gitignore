@@ -1,0 +1,17 @@
+# ignore all .b files
+*.a
+
+# but do track library.b, even though ignoring .b files above
+!library.b
+
+# only ignore the DATA files in the current history, not subdir/DATA
+/DATA
+
+# ignore all files in any directory named secret
+secret/
+
+# ignore doc/notes.text, but not doc/server/arch.txt
+doc/*.txt
+
+#ignore all .svg files in the mem/ dir and any of its subdirs
+men/**/*.svg
